@@ -1,0 +1,49 @@
+kind: Node
+apiVersion: v1
+metadata:
+  name: ip-10-0-47-7.us-east-2.compute.internal
+  labels:
+    beta.kubernetes.io/os: linux
+    platform: dev
+    failure-domain.beta.kubernetes.io/zone: us-east-2a
+    node.kubernetes.io/instance-type: m5.4xlarge
+    kubernetes.io/os: linux
+    topology.kubernetes.io/zone: us-east-2a
+    node-role.kubernetes.io/worker: ''
+    failure-domain.beta.kubernetes.io/region: us-east-2
+    node.openshift.io/os_id: rhcos
+    beta.kubernetes.io/instance-type: m5.4xlarge
+    kubernetes.io/hostname: ip-10-0-47-7.us-east-2.compute.internal
+    topology.kubernetes.io/region: us-east-2
+    beta.kubernetes.io/arch: amd64
+    kubernetes.io/arch: amd64
+    topology.ebs.csi.aws.com/zone: us-east-2a
+  annotations:
+    machineconfiguration.openshift.io/controlPlaneTopology: HighlyAvailable
+    k8s.ovn.org/node-subnets: '{"default":["10.131.0.0/23"]}'
+    machineconfiguration.openshift.io/lastAppliedDrain: uncordon-rendered-worker-604d94c374d74504972ee13d9e1380a3
+    k8s.ovn.org/node-mgmt-port-mac-address: '46:19:51:9f:9c:60'
+    cloud.network.openshift.io/egress-ipconfig: >-
+      [{"interface":"eni-056737ff45e0b7fad","ifaddr":{"ipv4":"10.0.0.0/18"},"capacity":{"ipv4":29,"ipv6":30}}]
+    machineconfiguration.openshift.io/currentConfig: rendered-worker-604d94c374d74504972ee13d9e1380a3
+    machineconfiguration.openshift.io/desiredConfig: rendered-worker-604d94c374d74504972ee13d9e1380a3
+    machineconfiguration.openshift.io/lastSyncedControllerConfigResourceVersion: '162912'
+    k8s.ovn.org/node-primary-ifaddr: '{"ipv4":"10.0.47.7/18"}'
+    k8s.ovn.org/node-transit-switch-port-ifaddr: '{"ipv4":"100.88.0.5/16"}'
+    k8s.ovn.org/node-id: '5'
+    k8s.ovn.org/remote-zone-migrated: ip-10-0-47-7.us-east-2.compute.internal
+    k8s.ovn.org/zone-name: ip-10-0-47-7.us-east-2.compute.internal
+    volumes.kubernetes.io/controller-managed-attach-detach: 'true'
+    machineconfiguration.openshift.io/desiredDrain: uncordon-rendered-worker-604d94c374d74504972ee13d9e1380a3
+    k8s.ovn.org/node-chassis-id: 04407f23-61f9-432e-a91c-249712ce6782
+    k8s.ovn.org/host-cidrs: '["10.0.47.7/18"]'
+    k8s.ovn.org/l3-gateway-config: >-
+      {"default":{"mode":"shared","interface-id":"br-ex_ip-10-0-47-7.us-east-2.compute.internal","mac-address":"02:d6:5e:09:db:e3","ip-addresses":["10.0.47.7/18"],"ip-address":"10.0.47.7/18","next-hops":["10.0.0.1"],"next-hop":"10.0.0.1","node-port-enable":"true","vlan-id":"0"}}
+    machineconfiguration.openshift.io/reason: ''
+    k8s.ovn.org/node-gateway-router-lrp-ifaddr: '{"ipv4":"100.64.0.5/16"}'
+    machine.openshift.io/machine: openshift-machine-api/cluster-7mdfm-f9l49-worker-us-east-2a-ggsrh
+    csi.volume.kubernetes.io/nodeid: '{"ebs.csi.aws.com":"i-00fc8495742551b25"}'
+    machineconfiguration.openshift.io/state: Done
+    k8s.ovn.org/network-ids: '{"default":"0"}'
+spec:
+  providerID: 'aws:///us-east-2a/i-00fc8495742551b25'
