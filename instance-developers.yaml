@@ -1,0 +1,42 @@
+apiVersion: argoproj.io/v1beta1
+kind: ArgoCD
+spec:
+  server:
+    autoscale:
+      enabled: false
+    grpc:
+      ingress:
+        enabled: false
+    ingress:
+      enabled: false
+    route:
+      enabled: false
+    service:
+      type: ''
+  grafana:
+    enabled: false
+    ingress:
+      enabled: false
+    route:
+      enabled: false
+  monitoring:
+    enabled: true
+  notifications:
+    enabled: false
+  prometheus:
+    enabled: false
+    ingress:
+      enabled: false
+    route:
+      enabled: false
+  initialSSHKnownHosts: {}
+  rbac: {}
+  repo: {}
+  ha:
+    enabled: false
+  tls:
+    ca: {}
+  redis: {}
+  controller:
+    processors: {}
+    sharding: {}
