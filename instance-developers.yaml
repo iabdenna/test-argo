@@ -1,5 +1,8 @@
 apiVersion: argoproj.io/v1beta1
 kind: ArgoCD
+metadata:
+  name: instance-developers
+  namespace: instance-developers
 spec:
   server:
     autoscale:
